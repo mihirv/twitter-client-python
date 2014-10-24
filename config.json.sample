@@ -1,0 +1,35 @@
+{
+    "api": {
+        "access_token_key": "",
+        "access_token_secret": "",
+        "consumer_key": "",
+        "consumer_secret": ""
+    },
+    "followers": {
+        "source": "tweetfile.json",
+        "target": "followers.json",
+        "user": "user_tweets.json"
+    },
+    "search": {
+        "track": "beer"
+    },
+    "user_tweet": {
+	"users": [
+		"mihirv"
+    	],
+	"count": 300,
+	"dir": "tweets/users/"
+    },
+    "list_tweet": {
+	"user": "mihirv",
+	"list_cnt": 1000,
+	"count": 300,
+	"dir": "tweets/lists/"
+    },
+    "user_timeline": {
+	"user": "mihirv",
+	"count": 200,
+	"dir": "tweets/timeline/"
+    },
+    "tweet_history": "history.json"
+}
