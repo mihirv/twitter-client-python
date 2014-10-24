@@ -1,1 +1,48 @@
-This is being update ..
+Twitter Python
+
+============
+Introduction
+============
+
+A Twitter client written in Python Using the Python Twitter (A Python wrapper around the Twitter API).
+
+=====
+Usage
+=====
+
+Usage:
+    python get_twitter_data.py [config.json]
+
+See:
+  - config.json.sample for a sample config.json file
+  - https://dev.twitter.com/apps/ generates parameters for "api" parameters
+  - https://dev.twitter.com/docs/api/1.1/post/statuses/filter for "search"
+
+
+============
+Installation
+============
+
+To use this project you will need to follow the follow the steps:
+
+1. You will need to Install Python 2.7.x
+
+2. Install Twitter Python API library --> $ pip install python-twitter
+	(More Info: https://github.com/bear/python-twitter)
+
+3. Create the following Directory Structure:
+	tweets/
+	├── lists/
+	├── timeline/
+	└── users/
+4. Copy config.json.sample into config.json
+
+5. Updated your Twitter Access & Consumer codes:
+        a. access_token_key
+        b. access_token_secret
+        c. consumer_key
+        d. consumer_secret
+
+6. Update the Twitter usersid in the "user_tweet" section in config.json who's tweets you want to grab
+
+7. Update your Twitter usersid in the "user_timeline" section in config.json so that all your timeline tweets are grabbed
