@@ -77,9 +77,8 @@ def writeTweetsToFile(tweets, filep, max_cnt):
         break
 
     for tweet in tweets:
-        fs.write('@')
-        fs.write(tweet.user.screen_name)
-        fs.write(': TYP: ')
+        pre_str = 'twt' + str(tweet.id) + ': @' + tweet.user.screen_name + ': TYP: '
+        fs.write(pre_str)
         fs.write(tweet.text.encode('utf-8').strip())
         fs.write('\n\n')
 
